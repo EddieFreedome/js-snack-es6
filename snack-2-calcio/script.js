@@ -36,7 +36,10 @@ function generateRandomNum(minNumber = 1, maxNumber = 10) {
 const newArr = []
 
 for (let i = 0; i < arrSquadre.length; i++) {
+    //destructuring
     const {falli_subiti, nome} = arrSquadre[i]
+    //const falli_subiti = 4
+    //const nome = Parma
     newArr.push(falli_subiti, nome)
     
 }
