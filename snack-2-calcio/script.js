@@ -19,18 +19,17 @@ const arrSquadre = [
     },
 ]
 
-let puntiFatti = arrSquadre.punti_fatti
-let falliSubiti = arrSquadre.falli_subiti
-console.log(puntiFatti)
+for (let i = 0; i < arrSquadre.length; i++) {
+    arrSquadre[i].punti_fatti = generateRandomNum();
+    arrSquadre[i].falli_subiti = generateRandomNum();
+}
 
-// function generateRandomNum(minNumber = 1, maxNumber = 10) {
-//     const numRandom = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
+console.log(arrSquadre[0].punti_fatti)
+console.log(arrSquadre[1].punti_fatti)
+console.log(arrSquadre[2].punti_fatti)
+
+function generateRandomNum(minNumber = 1, maxNumber = 10) {
+    const numRandom = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
   
-//     return numRandom;
-// }
-
-// for (let i = 0; i < arrSquadre.length; i++) {
-//     arrSquadre[i].punti_fatti = generateRandomNum(arrSquadre[i].punti_fatti);
-//     arrSquadre[i].falli_subiti = generateRandomNum(arrSquadre[i].falli_subiti);
-// }
-// console.log(punti_fatti, falli_subiti);
+    return numRandom;
+}
