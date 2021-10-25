@@ -24,12 +24,20 @@ for (let i = 0; i < arrSquadre.length; i++) {
     arrSquadre[i].falli_subiti = generateRandomNum();
 }
 
-console.log(arrSquadre[0].punti_fatti)
-console.log(arrSquadre[1].punti_fatti)
-console.log(arrSquadre[2].punti_fatti)
+console.log(arrSquadre)
+
 
 function generateRandomNum(minNumber = 1, maxNumber = 10) {
     const numRandom = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
   
     return numRandom;
 }
+
+const newArr = []
+
+for (let i = 0; i < arrSquadre.length; i++) {
+    const {falli_subiti, nome} = arrSquadre[i]
+    newArr.push(falli_subiti, nome)
+    
+}
+console.log(newArr);
