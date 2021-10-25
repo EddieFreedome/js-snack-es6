@@ -8,19 +8,28 @@ const arrBici = [
     
     {
         nome: "Bianchi Methanol",
-        peso: `${12.5}Kg`
+        peso: `${12.5}Kg`,
+        immagine: "img/bianchi-methanol.webp"
     },
 
     {
         nome: "Rockrider XC 940",
-        peso: `${12}Kg`
+        peso: `${12}Kg`,
+        immagine: "img/bianchi-methanol.webp"
     },
 
     {
         nome: "Trek XCaliber 8 ",
-        peso: `${11.5}Kg`
+        peso: `${11.5}Kg`,
+        immagine: "img/bianchi-methanol.webp"
     },
 
 ]
 
 console.log(arrBici[0], arrBici[1], arrBici[2]);
+
+//creo una costante peso per ogni oggetto dell'array
+for (let i = 0; i < arrBici.length; i++) {
+    let {peso} = arrBici[i];
+    
+}
